@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .slider {
+ position: relative;
+ width: 100%;
+ height:550px;
+ overflow: hidden;
+ margin-top: 100px;
+ margin-left: 1px;
+ /* border: 1px solid red */
+}
+
+.slider:hover{
+box-shadow: none;
+border:none;
+  
+}
+
+.slide {
+position: absolute;
+width: 100%;
+height:550px;
+transition: 0.5s;
+padding-bottom: 500px;
+/* border: 1px solid green; */
+}
+
+
+.slider-counter {
+ position: absolute;
+ top: 1329px;
+ right: 0%;
+ transform: translateX(-50%);
+ font-size: 24px;
+ color:black;
+ border-radius: 10px;
+ font-size: 20px;
+ padding-left: 1200px;
+ background: white;
+}
+
+.button {
+ /* position: absolute;
+ bottom: 20%; */
+ transform: translateY(50%); 
+ font-size: 20px;
+ padding: 10px 20px; 
+ cursor: pointer;
+ border: none; 
+ background-color: white; 
+ margin-left: 50px;
+}
+
+.button1 {
+  /* position: absolute; */
+/* bottom: 20%; */
+transform: translateY(50%); 
+ font-size: 20px;
+ padding: 10px 20px; 
+ cursor: pointer;
+ border: none; 
+ margin-left: 780px;
+ margin-top: 22px;
+ background-color: white;
+}
+
+
+
+.slide .Featured{
+  font-size: 20px;
+  color: black;
+  padding-left: 800px;
+  padding-top: 40px;
+}
+
+.slide .Cybersecurity{
+  font-size: 60px;
+  color: black;
+  padding-left: 800px;
+  padding-top: 40px;
+}
+
+.slide .business{
+  padding-left: 800px;
+  padding-top: 40px;
+  color: black;
+  font-size: 16px;
+}
+
+.slider .slide .image{
+  display: inline-block;
+  width: 38%;
+  border:none;
+  box-shadow: none;
+ margin-left: 150px;
+ margin-bottom: 800px;
+ margin-top: -390px;
+ border-radius: 10px;
+ box-shadow: rgba(218,220,224) 0px 5px, rgba(218,220,224) 0px 10px, rgba(189,193,198) 0px 15px, rgba(189,193,198) 0px 20px;
+ /* box-shadow:rgb(218,220,224)1px 8px, rgb(189,193,198) 0px 0px 0px 0px;  */
+} 
+
+.slider .slide .active-link {
+  color: black;
+  padding-left: 800px;
+  padding-top: 40px;
+}
+
+.slider .slide .image2{
+  display: inline-block;
+  display: inline-block;
+  width: 38%;
+  border:none;
+  box-shadow: none;
+ margin-left: 150px; 
+ margin-bottom: 800px;
+ margin-top: -505px;
+ border-radius: 10px;
+ box-shadow: rgba(218,220,224) 0px 5px, rgba(218,220,224) 0px 10px, rgba(189,193,198) 0px 15px, rgba(189,193,198) 0px 20px;
+}
+
+.slide .Featured2{
+  font-size: 20px;
+  color: black;
+  padding-left: 800px;
+  padding-top: 40px;
+} 
+
+.slide .Cybersecurity2{
+  font-size: 60px;
+  color: black;
+  padding-left: 800px;
+  padding-top: 40px;
+} 
+
+ .slide .business2{
+  padding-left: 800px;
+  padding-top: 40px;
+  color: black;
+  font-size: 16px;
+} 
+
+.slider .slide .image3{
+  display: inline-block;
+  width: 38%;
+  border:none;
+  box-shadow: none;
+ margin-left: 150px;
+ margin-bottom: 800px;
+ margin-top: -320px;
+ border-radius: 10px;
+ box-shadow: rgba(218,220,224) 0px 5px, rgba(218,220,224) 0px 10px, rgba(189,193,198) 0px 15px, rgba(189,193,198) 0px 20px;
+}
+
+.slider .slide .image4{
+  display: inline-block;
+  width: 38%;
+  border:none;
+  box-shadow: none;
+ margin-left: 150px;
+ margin-bottom: 800px;
+ margin-top: -339px;
+ border-radius: 10px;
+ box-shadow: rgba(218,220,224) 0px 5px, rgba(218,220,224) 0px 10px, rgba(189,193,198) 0px 15px, rgba(189,193,198) 0px 20px;
+}
+
+.slider .slide .image5{
+  display: inline-block;
+  width: 38%;
+  border:none;
+  box-shadow: none;
+ margin-left: 150px;
+ margin-bottom: 800px;
+ margin-top: -420px;
+ border-radius: 10px;
+ box-shadow: rgba(218,220,224) 0px 5px, rgba(218,220,224) 0px 10px, rgba(189,193,198) 0px 15px, rgba(189,193,198) 0px 20px;
+}
+
+.htag{
+border-bottom: 1.5px solid #202124;
+margin-top: 180px;
+padding-bottom: 30px;
+font-size: 28px;
+font-weight: 400;
+letter-spacing: normal;
+line-height: 36px;
+margin-left: 150px;
+margin-right: 150px;
+color: black;
+}
+
+.created{
+  position: relative;
+  width: 100%;
+ height:800px;
+ overflow: hidden;
+ border: 1px solid red;
+ margin-top: 50px;
+}
+
+.create{
+  position: absolute;
+width: 100%;
+height:800px;
+transition: 0.5s;
+border: 1px solid blue;
+}
+
+.created .create .imge{
+  border-radius: 10px;
+  margin-left: 150px;
+  cursor: pointer;
+}
+
+
+.created  .Bookmark{
+  width: 110px;
+  margin-left:520px;
+  margin-top: 500px;
+  cursor: pointer;
+  background-color: black;
+}
+
+.created  .circle:hover{
+  background-color: black;
+  cursor: pointer;
+}
+
+
+</style>
+
+</head>
+<body>
+    
+    <nav class="navbar">
+        <label id="icon">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <div class="navbar-left">
+            <a href="index.html" class="logo" ><img src="https://grow.google/static/apac/icons/logo_GwG.svg"></a>
+        </div>
+        <div class="navbar-center">
+            <!-- <a href="./Home2.html">Home</a> -->
+            <ul class="table">
+                <li><a href="./index.html" class="active-link"><span id="Home">Home</span></a></li>
+                <li><a href="./usetools.html" class="active2-link"><span>Use tools</span></a></li>
+                <li><a href="./Learn skills.html" class="active3-link"><span>Learn skills</span></a></li>
+                <li><a href="./google career.html" class="active4-link"><span>Google Career Certificates</span></a></li>
+                <li><a href="./google startup.html" class="active5-link"><span>Google for Startups</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="text">
+        <!-- <label id="exclamation"><i class="fa-solid fa-circle-exclamation"></i></label> -->
+        <a href="./cross.html"><label id="exclamation"><i class="fa-solid fa-circle-exclamation"></i></label></a>
+        <p>Get the right skills to reach new opportunities</p>
+        <h1 class="message">Hello, what can we <br> help you with? </h1>
+    </div>
+    
+    <div id="button">
+        <button class="button-17" role="button">my business</button>
+        <button class="button-18" role="button">my career</button>
+    </div>
+
+    <div class="slider">
+          
+         <div class="slide">
+           <p class="Featured">Featured</p>
+           <h1 class="Cybersecurity">Cybersecurity Essentials Course</h1>
+           <p class="business">For business leaders and professionals looking for an introduction to<br>cybersecurity concepts, learners can enroll in the new 10-hour <br> Cybersecurity Essentials course by the Google Cybersecurity Action <br>  Team to gain a baseline understanding of the field and the potential <br> threats and impact to business.</p>
+           <br>
+           <br>
+           <a href="./learn.html" class="active-link" ><span id="Home">Learn more</span></a>
+           <img src="https://lh3.googleusercontent.com/SHJD_aKf4NBrvxwu-YhKu9HrrLGcWrQpIBPimV3mT7YWnUj1gQUm9d1G84adc-IFHXfnlybB3ZJmmjw1-qlbnKR3Pg0yzgtxraxLnh_xknANPxADFg=w800" class="image" alt="Image 1">
+        </div>
+
+        <div class="slide">
+          <p class="Featured2">Featured</p>
+          <h1 class="Cybersecurity2">Announcing a new Google Career Certificate in Cybersecurity</h1>
+          <p class="business2">Prepare for a new career in the high-growth field of cybersecurity with a <br> professional certificate from Google. Learn the foundations of <br> cybersecurity, including how to monitor and protect networks, devices,<br> people, and data. No relevant experience required.</p>
+          <br>
+          <br>
+          <a href="./learn.html" class="active-link" ><span id="Home">Learn more</span></a>
+          <img src="https://lh3.googleusercontent.com/u5eUBxdTzb_d9s0EB803B_i8WEMatM3-AIlAktFaCdU7xhyTJ7KdY-Tek23AujvDvhagS5tZfPF2ciJvOKdTO_hMWQgnYeAwScWh5rEG_Uu7X7kJq-c=w800" class="image2" alt="Image 2">
+        </div>
+
+        <div class="slide">
+          <p class="Featured2">Featured</p>
+          <h1 class="Cybersecurity2">Google for Startups</h1>
+          <p class="business2">Whether you're starting out, building you startup, or scaling up to meet <br><br> the needs of consumers, business and society, we connect you with <br><br> resorces to help you thrive and grow.</p>
+          <br>
+          <br>
+          <a href="./learn.html" class="active-link" ><span id="Home">Explore resources</span></a>
+          <img src="https://lh3.googleusercontent.com/mgBuZGnPUR0v7GDebOS5EJTiJTRYvQhCF0tUJAfSLQSKDmKKYp4Ml9_lWb5h1-wglXsS87XvfS7-jknC71fhpAGRDNmgV7tonrWPu-N94nDqpml0Ryo=w800"  class="image3" alt="Image 3">
+        </div>
+        
+        <div class="slide">
+          <p class="Featured2">Featured</p>
+          <h1 class="Cybersecurity2">Secure your data <br> and devices</h1>
+          <p class="business2">It's Safer internet Day! take a 2-minute Security checkup to strengthen<br><br> your account.</p>
+          <br>
+          <br>
+          <a href="./learn.html" class="active-link" ><span id="Home">Start your checkup now</span></a>
+          <img src="https://lh3.googleusercontent.com/a7GC7nb8HjZrKhUh01KOdJHE1i_yvX2FXVUFZudbrNayLJ42arNkh5lzEYp19koEiANgyA4Le7QhTwH8US9I1FueYI_N_7cu8vytIQ=w800" class="image4"  alt="Image 4">
+        </div>
+
+        <div class="slide">
+          <p class="Featured2">Featured</p>
+          <h1 class="Cybersecurity2">Stand out on <br> Google with a free Business Profile </h1>
+          <p class="business2">Get more than a business listing. You free Business profile lets you easily<br><br> connect with customers across Google Search and Maps. </p>
+          <br>
+          <br>
+          <a href="./learn.html" class="active-link" ><span id="Home">Find out how</span></a>
+          <img src="https://lh3.googleusercontent.com/PLZzJ05tDJA-0mb8Ld1DFFJ0cw7UfSzzzrgxhPRTtqRghLwtfT8ZQC7DW23MPzdIVp2hxttNiiuXyVlTP2y0WlHumDxAwLEbSKBbcw=w800"  class="image5" alt="Image 5">
+        </div> 
+
+       </div>
+    
+       <div class="slider-counter">01/05</div>
+
+      <button class="button1" onclick="slide(-1)"><i class="fa-solid fa-less-than"></i> </button>
+      <button class="button" onclick="slide(1)"><i class="fa-solid fa-greater-than"></i></button>
+      
+       <h2 class="htag">Curated resources for you</h2>
+
+       <div class="created">
+
+        <div class="create">
+          <img src="https://lh3.googleusercontent.com/880olnQb1in3OdFcOsT5RIKPhwPjImxbS_iIEuTnUkPkeal5vVf9_tONhirTBroD-DOF1SHxn98Dz0fkn0_9BvRTamcnYGlafUwfjNo=w800 " class="imge" alt="">
+        </div>
+       
+
+
+        <div class="create">
+
+        </div>
+        
+        <div class="create">
+
+        </div>
+        
+        <div class="create">
+
+        </div>
+        <div class="create">
+
+        </div>
+        
+        <div class="create">
+
+        </div>
+       
+      </div>
+
+       <script>
+        let slideIndex = 0;
+      
+        function showSlides() {
+          const slides = document.getElementsByClassName("slide");
+          for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {
+            slideIndex = 1;
+          }
+          slides[slideIndex - 1].style.display = "block";
+      
+          // Update the counter
+          document.querySelector('.slider-counter').innerText = `0${slideIndex}/0${slides.length}`;
+      
+          setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+      
+        function slide(n) {
+          const slides = document.getElementsByClassName("slide");
+          slideIndex += n;
+          if (slideIndex < 1) {
+            slideIndex = slides.length;
+          }
+          if (slideIndex > slides.length) {
+            slideIndex = 1;
+          }
+          for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slides[slideIndex - 1].style.display = "block";
+      
+          // Update the counter
+          document.querySelector('.slider-counter').innerText = `0${slideIndex}/0${slides.length}`;
+        }
+      
+        showSlides();
+        </script>
+     
+
+</body>
+</html>
+
+<script src="./script.js"></script>
